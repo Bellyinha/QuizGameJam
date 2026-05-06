@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Matemática</title>
+    <link rel="stylesheet" href="css/quizmath.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- TÍTULO -->
+    <div id="title">
+      <h1>QUIZ MATEMÁTICA</h1>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+      <!-- 1 -->
+      <div class="caixa" id="d1">
+        <h3 class="pergunta">Pergunta 1</h3>
+        <p>Qual a raiz quadrada de 225?</p>
+        <ol type="a">
+          <li>25</li>
+          <li>15</li>
+          <li>18</li>
+          <li>12</li>
+        </ol>
+        <input class="resposta" id="r1" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir1()"/>
+        <button class="enviar botao" id="c1" onclick="conferir1()">Conferir</button>
+        <button class="prox botao" id="proximo1" onclick="irProxima1()">Próxima</button>
+        <p class="mudar" id="ce1"></p>
+      </div>
+
+      <!-- 2 -->
+      <div class="caixa" id="d2">
+        <h3 class="pergunta">Pergunta 2</h3>
+        <p>Qual é o valor aproximado de π ?</p>
+        <ol type="a">
+          <li>2,1434</li>
+          <li>3,1734</li>
+          <li>3,1415</li>
+          <li>2,1571</li>
+        </ol>
+        <input class="resposta" id="r2" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir2()"/>
+        <button class="enviar" id="c2" onclick="conferir2()">Conferir</button>
+        <button class="prox" id="proximo2" onclick="irProxima2()">Próxima</button>
+        <p class="mudar" id="ce2"></p>
+
+      </div>
+
+      <!-- 3 -->
+      <div class="caixa" id="d3">
+        <h3 class="pergunta">Pergunta 3</h3>
+        <p>Qual é o resultado de 10 - 6 x 2?</p>
+        <ol type="a">
+          <li>2</li>
+          <li>-2</li>
+          <li>-12</li>
+          <li>12</li>
+        </ol>
+        <input class="resposta" id="r3" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir3()"/>
+        <button class="enviar" id="c3" onclick="conferir3()">Conferir</button>
+        <button class="prox" id="proximo3" onclick="irProxima3()">Próxima</button>
+        <p class="mudar" id="ce3"></p>
+      </div>
+
+      <!-- 4 -->
+      <div class="caixa" id="d4">
+        <h3 class="pergunta">Pergunta 4</h3>
+        <p>Qual é o resultado de 2^5?</p>
+        <ol type="a">
+          <li>10</li>
+          <li>64</li>
+          <li>16</li>
+          <li>32</li>
+        </ol>
+        <input class="resposta" id="r4" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir4()"/>
+        <button class="enviar" id="c4" onclick="conferir4()">Conferir</button>
+        <button class="prox" id="proximo4" onclick="irProxima4()">Próxima</button>
+        <p class="mudar" id="ce4"></p>
+      </div>
+
+      <!-- 5 -->
+      <div class="caixa" id="d5">
+        <h3 class="pergunta">Pergunta 5</h3>
+        <p>Qual é o resultado de 25% de 80?</p>
+        <ol type="a">
+          <li>15</li>
+          <li>20</li>
+          <li>25</li>
+          <li>23</li>
+        </ol>
+        <input class="resposta" id="r5" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir5()"/>
+        <button class="enviar" id="c5" onclick="conferir5()">Conferir</button>
+        <button class="prox" id="proximo5" onclick="irProxima5()">Próxima</button>
+        <p class="mudar" id="ce5"></p>
+      </div>
+
+      <!-- 6 -->
+      <div class="caixa" id="d6">
+        <h3 class="pergunta">Pergunta 6</h3>
+        <p>
+          Qual é o resultado da expressão: <br />
+          (7 - 3) x 2 + 6?
+        </p>
+        <ol type="a">
+          <li>14</li>
+          <li>16</li>
+          <li>32</li>
+          <li>18</li>
+        </ol>
+        <input class="resposta" id="r6" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir6()"/>
+        <button class="enviar" id="c6" onclick="conferir6()">Conferir</button>
+        <button class="prox" id="proximo6" onclick="irProxima6()">Próxima</button>
+        <p class="mudar" id="ce6"></p>
+      </div>
+
+      <!-- 7 -->
+      <div class="caixa" id="d7">
+        <h3 class="pergunta">Pergunta 7</h3>
+        <p>O resultado da expressão <br> 2005 × 2005 - 2008 × 2002 é:</p>
+        <ol type="a">
+          <li>9</li>
+          <li>86</li>
+          <li>105</li>
+          <li>4004</li>
+        </ol>
+        <input class="resposta" id="r7" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir7()" />
+        <button class="enviar" id="c7" onclick="conferir7()">Conferir</button>
+        <button class="prox" id="proximo7" onclick="irProxima7()">Próxima</button>
+        <p class="mudar" id="ce7"></p>        
+      </div>
+
+      <!-- 8 -->
+      <div class="caixa" id="d8">
+        <h3 class="pergunta">Pergunta 8</h3>
+        <p>Qual a raiz cúbica de 27?</p>
+        <ol type="a">
+          <li>7</li>
+          <li>9</li>
+          <li>3</li>
+          <li>14</li>
+        </ol>
+        <input class="resposta" id="r8" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir8()"/>
+        <button class="enviar" id="c8" onclick="conferir8()">Conferir</button>
+        <button class="prox" id="proximo8" onclick="irProxima8()">Próxima</button>
+        <p class="mudar" id="ce8"></p>        
+      </div>
+
+      <!-- 9 -->
+      <div class="caixa" id="d9">
+        <h3 class="pergunta">Pergunta 9</h3>
+        <p>Qual é o resultado de 5² + 7²?</p>
+        <ol type="a">
+          <li>60</li>
+          <li>74</li>
+          <li>84</li>
+          <li>96</li>
+        </ol>
+        <input class="resposta" id="r9" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir9()"/>
+        <button class="enviar" id="c9" onclick="conferir9()">Conferir</button>
+        <button class="prox" id="proximo9" onclick="irProxima9()">Próxima</button>
+        <p class="mudar" id="ce9"></p>        
+      </div>
+
+      <!-- 10 -->
+      <div class="caixa" id="d10">
+        <h3 class="pergunta">Pergunta 10</h3>
+        <p>Qual a raiz quadrada de 121?</p>
+        <ol type="a">
+          <li>14</li>
+          <li>12</li>
+          <li>21</li>
+          <li>11</li>
+        </ol>
+        <input class="resposta" id="r10" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir10()"/>
+        <button class="enviar" id="c10" onclick="conferir10()">Conferir</button>
+        <button class="prox" id="proximo10" onclick="irProxima10()">Próxima</button>
+        <p class="mudar" id="ce10"></p>        
+      </div>
+
+      <!-- 11 -->
+      <div class="caixa" id="d11">
+        <h3 class="pergunta">Pergunta 11</h3>
+        <p>Qual o resultado de 24/12 + 56/2</p>
+        <ol type="a">
+          <li>28</li>
+          <li>29</li>
+          <li>60</li>
+          <li>30</li>
+        </ol>
+        <input class="resposta" id="r11" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir11()"/>
+        <button class="enviar" id="c11" onclick="conferir11()">Conferir</button>
+        <button class="prox" id="proximo11" onclick="irProxima11()">Próxima</button>
+        <p class="mudar" id="ce11"></p>        
+      </div>
+
+      <!-- 12 -->
+      <div class="caixa" id="d12">
+        <h3 class="pergunta">Pergunta 12</h3>
+        <p>
+          Qual o resultado do sexto número <br />
+          primo ao quadrado?
+        </p>
+        <ol type="a">
+          <li>36</li>
+          <li>26</li>
+          <li>169</li>
+          <li>13</li>
+        </ol>
+        <input class="resposta" id="r12" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir12()"/>
+        <button class="enviar" id="c12" onclick="conferir12()">Conferir</button>
+        <button class="prox" id="proximo12" onclick="irProxima12()">Conferir resultado</button>
+        <p class="mudar" id="ce12"></p>        
+      </div>
+
+      <!-- Resultado final -->
+      <div id="final">
+        <h2>Parabéns!</h2>
+        <p id="result">Você acertou <p id="pontos"></p> </p>
+        <p id="frase">"Estudar matemática é multiplicar a sabedoria, dividir o pensamento, adicionar o racicínio e subtrair egoísmo. Porque o saber Matemático é um saber sistematizado" <br> Daniel Perato</p>
+
+        <button id="voltar" onclick="entrar()">Tentar novamente</button>
+        <button id="p-inicial" onclick="voltar()">Voltar para página inicial</button>
+      </div>
+    </div>
+
+    <div class="btn-home">
+      <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+    </div>
+
+    <script src="js/matematica.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

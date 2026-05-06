@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Geografia</title>
+    <link rel="stylesheet" href="css/quizGeo.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- TÍTULO -->
+    <div id="title">
+      <h1>QUIZ GEOGRAFIA</h1>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+      <!-- 1 -->
+      <div class="caixa" id="d1">
+        <h3 class="pergunta">Pergunta 1</h3>
+        <p>Na geografia, a condição atual <br> da atmosfera é chamada de:</p>
+        <ol type="a">
+          <li>Clima</li>
+          <li>Estação</li>
+          <li>Tempo</li>
+          <li>Pressão atmosférica</li>
+        </ol>
+        <input class="resposta" id="r1" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir1()"/>
+        <button class="enviar botao" id="c1" onclick="conferir1()">Conferir</button>
+        <button class="prox botao" id="proximo1" onclick="irProxima1()">Próxima</button>
+        <p class="mudar" id="ce1"></p>
+      </div>
+
+      <!-- 2 -->
+      <div class="caixa" id="d2">
+        <h3 class="pergunta">Pergunta 2</h3>
+        <p>Qual a maior bacia <br> hidrográfica do mundo?</p>
+        <ol type="a">
+          <li>Bacia Amazônica</li>
+          <li>Bacia do Congo</li>
+          <li>Bacia do Mississipi</li>
+          <li>Bacia Platina</li>
+        </ol>
+        <input class="resposta" id="r2" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir2()"/>
+        <button class="enviar" id="c2" onclick="conferir2()">Conferir</button>
+        <button class="prox" id="proximo2" onclick="irProxima2()">Próxima</button>
+        <p class="mudar" id="ce2"></p>
+
+      </div>
+
+      <!-- 3 -->
+      <div class="caixa" id="d3">
+        <h3 class="pergunta">Pergunta 3</h3>
+        <p>Em qual continente está <br> concentrado cerca de ⅓ <br> da população mundial?</p>
+        <ol type="a">
+          <li>América</li>
+          <li>Ásia</li>
+          <li>Europa</li>
+          <li>África</li>
+        </ol>
+        <input class="resposta" id="r3" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir3()"/>
+        <button class="enviar" id="c3" onclick="conferir3()">Conferir</button>
+        <button class="prox" id="proximo3" onclick="irProxima3()">Próxima</button>
+        <p class="mudar" id="ce3"></p>
+      </div>
+
+      <!-- 4 -->
+      <div class="caixa" id="d4">
+        <h3 class="pergunta">Pergunta 4</h3>
+        <p>Qual é o maior oceano <br> do planeta?</p>
+        <ol type="a">
+          <li>Atlântico</li>
+          <li>Índico</li>
+          <li>Pacífico</li>
+          <li>Ártico</li>
+        </ol>
+        <input class="resposta" id="r4" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir4()"/>
+        <button class="enviar" id="c4" onclick="conferir4()">Conferir</button>
+        <button class="prox" id="proximo4" onclick="irProxima4()">Próxima</button>
+        <p class="mudar" id="ce4"></p>
+      </div>
+
+      <!-- 5 -->
+      <div class="caixa" id="d5">
+        <h3 class="pergunta">Pergunta 5</h3>
+        <p>Qual destes não é um <br> bloco econômico:</p>
+        <ol type="a">
+          <li>Nafta</li>
+          <li>APEC</li>
+          <li>Mercosul</li>
+          <li>BRICS</li>
+        </ol>
+        <input class="resposta" id="r5" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir5()"/>
+        <button class="enviar" id="c5" onclick="conferir5()">Conferir</button>
+        <button class="prox" id="proximo5" onclick="irProxima5()">Próxima</button>
+        <p class="mudar" id="ce5"></p>
+      </div>
+
+      <!-- 6 -->
+      <div class="caixa" id="d6">
+        <h3 class="pergunta">Pergunta 6</h3>
+        <p>A alternativa que não apresenta <br> climas do Brasil é: </p>
+        <ol type="a">
+          <li>Equatorial e Tropical</li>
+          <li>Tropical de Altitude e Semiárido</li>
+          <li>Temperado e Mediterrâneo</li>
+          <li>Subtropical e Tropical Litorâneo</li>
+        </ol>
+        <input class="resposta" id="r6" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir6()"/>
+        <button class="enviar" id="c6" onclick="conferir6()">Conferir</button>
+        <button class="prox" id="proximo6" onclick="irProxima6()">Próxima</button>
+        <p class="mudar" id="ce6"></p>
+      </div>
+
+      <!-- 7 -->
+      <div class="caixa" id="d7">
+        <h3 class="pergunta">Pergunta 7</h3>
+        <p>Qual é o nome do fenômeno caracterizado <br> pelo aquecimento anormal das <br> águas do Oceano Pacífico?</p>
+        <ol type="a">
+          <li>La Niña</li>
+          <li>El Niño</li>
+          <li>Monção</li>
+          <li>Corrente de Humboldt</li>
+        </ol>
+        <input class="resposta" id="r7" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir7()" />
+        <button class="enviar" id="c7" onclick="conferir7()">Conferir</button>
+        <button class="prox" id="proximo7" onclick="irProxima7()">Próxima</button>
+        <p class="mudar" id="ce7"></p>        
+      </div>
+
+      <!-- 8 -->
+      <div class="caixa" id="d8">
+        <h3 class="pergunta">Pergunta 8</h3>
+        <p>Qual é o nome dado à camada atmosférica <br>  onde ocorre a maior parte dos fenômenos <br> meteorológicos, como chuvas e ventos?</p>
+        <ol type="a">
+          <li>Troposfera</li>
+          <li>Estratosfera</li>
+          <li>Mesosfera</li>
+          <li>Termosfera</li>
+        </ol>
+        <input class="resposta" id="r8" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir8()"/>
+        <button class="enviar" id="c8" onclick="conferir8()">Conferir</button>
+        <button class="prox" id="proximo8" onclick="irProxima8()">Próxima</button>
+        <p class="mudar" id="ce8"></p>        
+      </div>
+
+      <!-- 9 -->
+      <div class="caixa" id="d9">
+        <h3 class="pergunta">Pergunta 9</h3>
+        <p>A alternativa que não apresenta informações <br> sobre o clima equatorial é:</p>
+        <ol type="a">
+          <li>Altas temperaturas durante todo o ano</li>
+          <li>Baixa amplitude térmica</li>
+          <li>As massas de ar atuantes são quentes e secas</li>
+          <li>Está presente na Floresta Amazônica</li>
+        </ol>
+        <input class="resposta" id="r9" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir9()"/>
+        <button class="enviar" id="c9" onclick="conferir9()">Conferir</button>
+        <button class="prox" id="proximo9" onclick="irProxima9()">Próxima</button>
+        <p class="mudar" id="ce9"></p>        
+      </div>
+
+      <!-- 10 -->
+      <div class="caixa" id="d10">
+        <h3 class="pergunta">Pergunta 10</h3>
+        <p>Qual destes países atualmente <br> não participa do Mercosul?</p>
+        <ol type="a">
+          <li>Argentina</li>
+          <li>Venezuela</li>
+          <li>Uruguai</li>
+          <li>Paraguai</li>
+        </ol>
+        <input class="resposta" id="r10" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir10()"/>
+        <button class="enviar" id="c10" onclick="conferir10()">Conferir</button>
+        <button class="prox" id="proximo10" onclick="irProxima10()">Próxima</button>
+        <p class="mudar" id="ce10"></p>        
+      </div>
+
+      <!-- 11 -->
+      <div class="caixa" id="d11">
+        <h3 class="pergunta">Pergunta 11</h3>
+        <p>Qual é o sentido de rotação da Terra?</p>
+        <ol type="a">
+          <li>De Norte para Sul</li>
+          <li>De Oeste para Norte</li>
+          <li>De Leste para Oeste</li>
+          <li>De Oeste para Leste</li>
+        </ol>
+        <input class="resposta" id="r11" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir11()"/>
+        <button class="enviar" id="c11" onclick="conferir11()">Conferir</button>
+        <button class="prox" id="proximo11" onclick="irProxima11()">Próxima</button>
+        <p class="mudar" id="ce11"></p>        
+      </div>
+
+      <!-- 12 -->
+      <div class="caixa" id="d12">
+        <h3 class="pergunta">Pergunta 12</h3>
+        <p>Quais são os pontos colaterais?</p>
+        <ol type="a">
+          <li>Nordeste, Noroeste, Sudeste e Sudoeste </li>
+          <li>Norte, Sul, Leste e Oeste</li>
+          <li>Noroeste, Norte, Leste e Sudeste</li>
+          <li>Norte, Nordeste, Sul e Sudeste</li>
+        </ol>
+        <input class="resposta" id="r12" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir12()"/>
+        <button class="enviar" id="c12" onclick="conferir12()">Conferir</button>
+        <button class="prox" id="proximo12" onclick="irProxima12()">Conferir resultado</button>
+        <p class="mudar" id="ce12"></p>        
+      </div>
+
+      <!-- Resultado final -->
+      <div id="final">
+        <h2>Parabéns!</h2>
+        <p id="result">Você acertou <p id="pontos"></p> </p>
+        <p id="frase">"A geografia é a pintura do tempo. Ela nos mostra as cores das estações, as mudanças do clima e as transformações da paisagem"</p>
+
+        <button id="voltar" onclick="document.location.href = 'quizGeo.html'">Tentar novamente</button>
+        <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
+      </div>
+    </div>
+
+    <div class="btn-home">
+      <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+    </div>
+
+    <script src="js/geografia.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
