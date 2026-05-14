@@ -4,8 +4,10 @@
 }
 
 body {
-  /* background-image: url(../img/FundoIndex.png); */
-  width: 100vw;
+  background-image: url(../img/indexFundo.png);
+  background-position: center; /* Centraliza horizontal e verticalmente */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-size: cover; /* Cobre o container sem distorcer */
   height: 100vh;
 }
 
@@ -17,35 +19,166 @@ body {
   height: 100vh;
 }
 
+
 #title {
-  color: white;
-  font-size: 60px;
+  color: #cccccc;
+  font-size: 70px;
   /* text-shadow: 15px 15px 20px black; */
-  background-color: rgb(87, 87, 87);
+  background-color: #fff;
   border-radius: 10px;
   padding: 8px;
-  border: 1px solid black;
+  margin-bottom: 5px;
+  border: 3px solid #cccccc;
+  cursor: default;
 }
 
 .button {
   flex-direction: row;
 }
 
-.botao {
+button {
   padding: 10px;
+  margin: 4px;
   border-radius: 10px;
   margin-top: 15px;
-  background-color: rgb(87, 87, 87);
-  font-size: 17px;
-  border: 1px solid black;
+  font-size: 21px;
   /* box-shadow: 10px 10px 15px black; */
-  color: white;
   font-weight: bold;
   flex-direction: row;
+  border: none;
+  cursor: pointer;
 }
 
-a {
+/* .botaoMath {
+  background-color: #d37676;
+  border: 3px solid #945252;
+  color: #945252; 
+}
+.botaoCien {
+  background-color: #99ebf1;
+  border: 3px solid #62989c;
+  color: #62989c;
+}
+.botaoGeo {
+  background-color: #8ca57f;
+  border: 3px solid #5d6d54;
+  color: #5d6d54;
+}
+.botaoPort {
+  background-color: #dad47f;
+  border: 3px solid #9c9754;
+  color: #9c9754;
+} */
+
+.botaoMath {
+  background-color: transparent;
+  color: #945252;
+  border: 2px solid #945252;
+  position: relative;
+}
+
+.botaoMath::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #945252;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.botaoMath:hover::after {
+  width: 100%;
+}
+
+.botaoMath:hover {
   color: white;
-  text-decoration: none;
-  font-size: 14px;
+}
+
+.botaoCien {
+  background-color: transparent;
+  color: #57bbc2;
+  border: 2px solid #57bbc2;
+  position: relative;
+}
+
+.botaoCien::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #57bbc2;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.botaoCien:hover::after {
+  width: 100%;
+}
+
+.botaoCien:hover {
+  color: white;
+}
+
+.botaoGeo {
+  background-color: transparent;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+  position: relative;
+}
+
+.botaoGeo::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #27ae60;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.botaoGeo:hover::after {
+  width: 100%;
+}
+
+.botaoGeo:hover {
+  color: white;
+}
+
+.botaoPort {
+  background-color: transparent;
+  color: #f39c12;
+  border: 2px solid #f39c12;
+  position: relative;
+}
+
+.botaoPort::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f39c12;
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.botaoPort:hover::after {
+  width: 100%;
+}
+
+.botaoPort:hover {
+  color: white;
+}
+
+::selection {
+  background-color: #a1bd92; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
 }

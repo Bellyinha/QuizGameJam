@@ -1,6 +1,6 @@
 //pagina inicial
 function entrar() {
-  document.location.href = 'quizLite.html';
+  document.location.href = 'quizPort.html';
 }
 
 function voltar() {

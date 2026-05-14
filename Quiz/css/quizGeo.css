@@ -7,10 +7,14 @@
 }
 
 body {
-  background-image: url(../img/FundoGeo.png);
+  background-image: url(../img/geoFundo.png);
+  background-position: center; /* Centraliza horizontal e verticalmente */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-size: cover; /* Cobre o container sem distorcer */
+  height: 100vh;
 }
 
-#title {
+/* #title {
   color: white;
   font-size: 20px;
   text-shadow: 4px 4px 5px black;
@@ -21,29 +25,38 @@ body {
   margin: 10px;
   width: 340px;
   text-align: center;
-}
+} */
 
 .container {
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 100vh;
 }
 
 .pergunta {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.resposta,
 .enviar,
 .prox,
 #voltar,
 #p-inicial {
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid black;
+  border: 1px solid #53614b;
   margin-top: 10px;
+  background-color: #a1bd92;
+}
+
+.resposta {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #53614b;
+  margin-top: 10px;
+  background-color: #fff;
 }
 
 .enviar:hover,
@@ -51,7 +64,8 @@ body {
 #voltar:hover,
 #p-inicial:hover {
   cursor: pointer;
-  background-color: #dddddd;
+  background-color: #849c78;
+  color: #fff;
 }
 
 .prox {
@@ -70,19 +84,14 @@ body {
 }
 
 .caixa {
-  background-color: aliceblue;
+  background-color: #fffed9;
   padding: 35px;
   margin-top: 20px;
   border-radius: 20px;
-  border: 2px solid black;
-  box-shadow: 10px 10px 10px rgb(63, 63, 63);
+  border: 2px solid #53614b;
+  /* box-shadow: 10px 10px 10px rgb(63, 63, 63); */
   display: none;
   position: relative;
-}
-
-.caixa p {
-    text-align: center;
-    padding-bottom: 1px;
 }
 
 #d1 {
@@ -91,20 +100,20 @@ body {
 
 /* FINAL */
 #final {
-  color: white;
-  background-color: rgb(87, 87, 87);
+  color: #53614b;
+  background-color: #fffed9;
   border-radius: 30px;
   padding: 25px;
-  border: 1px solid black;
+  border: 1px solid #53614b;
   text-align: center;
   width: 500px;
-  box-shadow: 12px 12px 12px rgb(59, 59, 59);
+  /* box-shadow: 12px 12px 12px rgb(59, 59, 59); */
   display: none;
 }
 
-#final h2 {
+/* #final h2 {
   text-shadow: 2px 2px 2px black;
-}
+} */
 
 #pontos {
   font-size: 28px;
@@ -118,17 +127,22 @@ body {
 
 /* Botão voltar para inicio */
 .btn-home {
-  background-color: rgb(87, 87, 87);
+  background-color: #a1bd92;
   width: 30px;
   border-radius: 50px;
   padding: 5px;
-  border: 1px solid black;
+  border: 3px solid #53614b;
   position: fixed;
   bottom: 20px;
   right: 28px;
 }
 
 .btn-home ion-icon {
-  color: black;
+  color: #53614b;
   font-size: 30px;
+}
+
+::selection {
+  background-color: #a1bd92; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
 }
