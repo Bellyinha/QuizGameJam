@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../img/liteFundo.png);
+  background-image: url(../img/portFundo.png);
   background-position: center; /* Centraliza horizontal e verticalmente */
   background-repeat: no-repeat; /* Evita repetição */
   background-size: cover; /* Cobre o container sem distorcer */
@@ -73,7 +73,7 @@ body {
 }
 
 .botao {
-  position: absolute;
+  /* position: absolute; */
   right: 45px;
 }
 

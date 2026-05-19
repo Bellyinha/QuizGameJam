@@ -140,7 +140,7 @@ function conferir9() {
 //pergunta10
 function conferir10() {
   let resposta = document.getElementById('r10').value;
-  if (resposta == 'b' || resposta == 'B' || resposta == '11') {
+  if (resposta == 'b' || resposta == 'B') {
     document.getElementById('ce10').innerHTML = 'Resposta certa :)';
     document.getElementById('d10').style.backgroundColor = '#ccffcc';
     ponto = ponto + 1;
@@ -150,36 +150,6 @@ function conferir10() {
   }
   document.getElementById('c10').style.display = 'none';
   document.getElementById('proximo10').style.display = 'inline-block';
-}
-
-//pergunta11
-function conferir11() {
-  let resposta = document.getElementById('r11').value;
-  if (resposta == 'a' || resposta == 'A' || resposta == '30') {
-    document.getElementById('ce11').innerHTML = 'Resposta certa :)';
-    document.getElementById('d11').style.backgroundColor = '#ccffcc';
-    ponto = ponto + 1;
-  } else {
-    document.getElementById('ce11').innerHTML = 'Resposta errada :(';
-    document.getElementById('d11').style.backgroundColor = '#ffcbcb';
-  }
-  document.getElementById('c11').style.display = 'none';
-  document.getElementById('proximo11').style.display = 'inline-block';
-}
-
-//pergunta12
-function conferir12() {
-  let resposta = document.getElementById('r12').value;
-  if (resposta == 'd' || resposta == 'D' || resposta == '169') {
-    document.getElementById('ce12').innerHTML = 'Resposta certa :)';
-    document.getElementById('d12').style.backgroundColor = '#ccffcc';
-    ponto = ponto + 1;
-  } else {
-    document.getElementById('ce12').innerHTML = 'Resposta errada :(';
-    document.getElementById('d12').style.backgroundColor = '#ffcbcb';
-  }
-  document.getElementById('c12').style.display = 'none';
-  document.getElementById('proximo12').style.display = 'inline-block';
 }
 
 //ir para a proxima pergunta
@@ -230,16 +200,6 @@ function irProxima9() {
 
 function irProxima10() {
   document.getElementById('d10').style.display = 'none';
-  document.getElementById('d11').style.display = 'block';
-}
-
-function irProxima11() {
-  document.getElementById('d11').style.display = 'none';
-  document.getElementById('d12').style.display = 'block';
-}
-
-function irProxima12() {
-  document.getElementById('d12').style.display = 'none';
   document.getElementById('final').style.display = 'block';
-  document.getElementById('pontos').innerHTML = ponto + '/12';
+  document.getElementById('pontos').innerHTML = ponto + '/10';
 }

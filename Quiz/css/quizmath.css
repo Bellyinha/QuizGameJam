@@ -35,6 +35,17 @@ body {
   height: 100vh;
 }
 
+.qComImagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imagem {
+  margin-left: 300px;
+  border-radius: 10%;
+}
+
 .pergunta {
   text-align: center;
   margin-bottom: 10px;
@@ -73,7 +84,7 @@ body {
 }
 
 .botao {
-  position: absolute;
+  /* position: absolute; */
   right: 45px;
 }
 
@@ -92,6 +103,7 @@ body {
   /* box-shadow: 10px 10px 10px rgb(63, 63, 63); */
   display: none;
   position: relative;
+  /* min-width: 240px; */
 }
 
 #d1 {

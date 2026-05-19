@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Cabin Sketch", sans-serif;
 }
 
 body {
@@ -21,14 +24,14 @@ body {
 
 
 #title {
-  color: #cccccc;
-  font-size: 70px;
+  color: #f3f3f3;
+  font-size: 100px;
   /* text-shadow: 15px 15px 20px black; */
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 10px;
   padding: 8px;
   margin-bottom: 5px;
-  border: 3px solid #cccccc;
+  border: 3px solid #d8d8d8;
   cursor: default;
 }
 
@@ -41,7 +44,7 @@ button {
   margin: 4px;
   border-radius: 10px;
   margin-top: 15px;
-  font-size: 21px;
+  font-size: 25px;
   /* box-shadow: 10px 10px 15px black; */
   font-weight: bold;
   flex-direction: row;
@@ -153,8 +156,8 @@ button {
 
 .botaoPort {
   background-color: transparent;
-  color: #f39c12;
-  border: 2px solid #f39c12;
+  color: #c58114;
+  border: 2px solid #c58114;
   position: relative;
 }
 
@@ -165,7 +168,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #f39c12;
+  background-color: #c58114;
   transition: width 0.5s ease;
   z-index: -1;
 }

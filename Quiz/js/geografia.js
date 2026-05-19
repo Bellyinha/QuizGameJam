@@ -64,7 +64,7 @@ function conferir4() {
 //pergunta5
 function conferir5() {
   let resposta = document.getElementById('r5').value;
-  if (resposta == 'd' || resposta == 'D') {
+  if (resposta == 'c' || resposta == 'C') {
     document.getElementById('ce5').innerHTML = 'Resposta certa :)';
     document.getElementById('d5').style.backgroundColor = '#ccffcc';
     ponto = ponto + 1;
@@ -79,7 +79,7 @@ function conferir5() {
 //pergunta6
 function conferir6() {
   let resposta = document.getElementById('r6').value;
-  if (resposta == 'c' || resposta == 'C') {
+  if (resposta == 'd' || resposta == 'D') {
     document.getElementById('ce6').innerHTML = 'Resposta certa :)';
     document.getElementById('d6').style.backgroundColor = '#ccffcc';
     ponto = ponto + 1;
@@ -94,7 +94,7 @@ function conferir6() {
 //pergunta7
 function conferir7() {
   let resposta = document.getElementById('r7').value;
-  if (resposta == 'b' || resposta == 'B') {
+  if (resposta == 'a' || resposta == 'A') {
     document.getElementById('ce7').innerHTML = 'Resposta certa :)';
     document.getElementById('d7').style.backgroundColor = '#ccffcc';
     ponto = ponto + 1;
@@ -109,7 +109,7 @@ function conferir7() {
 //pergunta8
 function conferir8() {
   let resposta = document.getElementById('r8').value;
-  if (resposta == 'a' || resposta == 'A') {
+  if (resposta == 'c' || resposta == 'C') {
     document.getElementById('ce8').innerHTML = 'Resposta certa :)';
     document.getElementById('d8').style.backgroundColor = '#ccffcc';
     ponto = ponto + 1;
@@ -124,7 +124,7 @@ function conferir8() {
 //pergunta9
 function conferir9() {
   let resposta = document.getElementById('r9').value;
-  if (resposta == 'c' || resposta == 'C') {
+  if (resposta == 'b' || resposta == 'B') {
     document.getElementById('ce9').innerHTML = 'Resposta certa :)';
     document.getElementById('d9').style.backgroundColor = '#ccffcc';
     ponto = ponto + 1;
@@ -149,36 +149,6 @@ function conferir10() {
   }
   document.getElementById('c10').style.display = 'none';
   document.getElementById('proximo10').style.display = 'inline-block';
-}
-
-//pergunta11
-function conferir11() {
-  let resposta = document.getElementById('r11').value;
-  if (resposta == 'd' || resposta == 'D') {
-    document.getElementById('ce11').innerHTML = 'Resposta certa :)';
-    document.getElementById('d11').style.backgroundColor = '#ccffcc';
-    ponto = ponto + 1;
-  } else {
-    document.getElementById('ce11').innerHTML = 'Resposta errada :(';
-    document.getElementById('d11').style.backgroundColor = '#ffcbcb';
-  }
-  document.getElementById('c11').style.display = 'none';
-  document.getElementById('proximo11').style.display = 'inline-block';
-}
-
-//pergunta12
-function conferir12() {
-  let resposta = document.getElementById('r12').value;
-  if (resposta == 'a' || resposta == 'A') {
-    document.getElementById('ce12').innerHTML = 'Resposta certa :)';
-    document.getElementById('d12').style.backgroundColor = '#ccffcc';
-    ponto = ponto + 1;
-  } else {
-    document.getElementById('ce12').innerHTML = 'Resposta errada :(';
-    document.getElementById('d12').style.backgroundColor = '#ffcbcb';
-  }
-  document.getElementById('c12').style.display = 'none';
-  document.getElementById('proximo12').style.display = 'inline-block';
 }
 
 //ir para a proxima pergunta
@@ -229,16 +199,7 @@ function irProxima9() {
 
 function irProxima10() {
   document.getElementById('d10').style.display = 'none';
-  document.getElementById('d11').style.display = 'block';
-}
-
-function irProxima11() {
-  document.getElementById('d11').style.display = 'none';
-  document.getElementById('d12').style.display = 'block';
-}
-
-function irProxima12() {
-  document.getElementById('d12').style.display = 'none';
   document.getElementById('final').style.display = 'block';
-  document.getElementById('pontos').innerHTML = ponto + '/12';
+  document.getElementById('pontos').innerHTML = ponto + '/10';
 }
+
