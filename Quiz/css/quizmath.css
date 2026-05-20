@@ -44,10 +44,15 @@ body {
 .imagem {
   margin-left: 300px;
   border-radius: 10%;
+  /* width: 150px; */
 }
 
 .pergunta {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.perguntas {
   margin-bottom: 10px;
 }
 
@@ -81,17 +86,12 @@ body {
 
 .prox {
   display: none;
-}
-
-.botao {
-  /* position: absolute; */
-  right: 45px;
+  margin-left: auto;
 }
 
 .mudar {
-  margin-top: 10px;
+  margin: 10px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .caixa {
@@ -103,7 +103,7 @@ body {
   /* box-shadow: 10px 10px 10px rgb(63, 63, 63); */
   display: none;
   position: relative;
-  /* min-width: 240px; */
+  min-width: 240px;
 }
 
 #d1 {
