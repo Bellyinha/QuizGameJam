@@ -1,0 +1,522 @@
+﻿[
+  {
+    "id": 1,
+    "subject": "Matemática",
+    "content": "Quanto é 25 + 17?",
+    "alternatives": {
+      "a": "32",
+      "b": "42",
+      "c": "52",
+      "d": "41"
+    },
+    "answer": "b",
+    "explanation": "25 + 17 é igual a 42, por isso a alternativa b é a correta."
+  },
+  {
+    "id": 2,
+    "subject": "Matemática",
+    "content": "Qual é o resultado de 9 X 6?",
+    "alternatives": {
+      "a": "54",
+      "b": "63",
+      "c": "45",
+      "d": "49"
+    },
+    "answer": "a",
+    "explanation": "9 vezes 6 resulta em 54, então a alternativa a está correta."
+  },
+  {
+    "id": 3,
+    "subject": "Matemática",
+    "content": "Qual fração representa metade de um inteiro?",
+    "alternatives": {
+      "a": "1/3",
+      "b": "2/3",
+      "c": "1/2",
+      "d": "3/4"
+    },
+    "answer": "c",
+    "explanation": "Metade de um inteiro é 1/2, por isso a alternativa c é correta."
+  },
+  {
+    "id": 4,
+    "subject": "Matemática",
+    "content": "Qual é o valor de 7²?",
+    "alternatives": {
+      "a": "14",
+      "b": "42",
+      "c": "49",
+      "d": "56"
+    },
+    "answer": "c",
+    "explanation": "7 ao quadrado é 49."
+  },
+  {
+    "id": 5,
+    "subject": "Matemática",
+    "content": "Um produto custa R$ 80,00 e recebeu desconto de R$ 20,00. Qual é o novo valor?",
+    "alternatives": {
+      "a": "R$ 50,00",
+      "b": "R$ 60,00",
+      "c": "R$ 70,00",
+      "d": "R$ 75,00"
+    },
+    "answer": "b",
+    "explanation": "80 menos 20 é 60, então a alternativa b é a correta."
+  },
+  {
+    "id": 6,
+    "subject": "Matemática",
+    "content": "Resolva a equação: x + 8 = 20",
+    "alternatives": {
+      "a": "10",
+      "b": "12",
+      "c": "14",
+      "d": "28"
+    },
+    "answer": "b",
+    "explanation": "Para isolar x, subtrai-se 8 de 20, resultando em x = 12."
+  },
+  {
+    "id": 7,
+    "subject": "Matemática",
+    "content": "Qual é a área de um quadrado com lado medindo 5 cm? A=l²",
+    "alternatives": {
+      "a": "10 cm²",
+      "b": "15 cm²",
+      "c": "20 cm²",
+      "d": "25 cm²"
+    },
+    "answer": "d",
+    "explanation": "A área do quadrado é lado², então 5 × 5 = 25 cm²."
+  },
+  {
+    "id": 8,
+    "subject": "Matemática",
+    "content": "Qual é o valor de: 3x - 5 = 16?",
+    "alternatives": {
+      "a": "5",
+      "b": "6",
+      "c": "7",
+      "d": "8"
+    },
+    "answer": "c",
+    "explanation": "Somando 5 em ambos os lados, 3x = 21, então x = 7."
+  },
+  {
+    "id": 9,
+    "subject": "Matemática",
+    "content": "Um triângulo retângulo possui catetos medindo 6 cm e 8 cm. Qual é a medida da hipotenusa?",
+    "alternatives": {
+      "a": "9 cm",
+      "b": "10 cm",
+      "c": "11 cm",
+      "d": "12 cm"
+    },
+    "answer": "b",
+    "explanation": "Pelo Teorema de Pitágoras, 6² + 8² = 100, e a raiz de 100 é 10."
+  },
+  {
+    "id": 10,
+    "subject": "Matemática",
+    "content": "Observe a função: y = 2x + 3. Qual será o valor de y quando x = 4?",
+    "alternatives": {
+      "a": "8",
+      "b": "9",
+      "c": "10",
+      "d": "11"
+    },
+    "answer": "d",
+    "explanation": "Substituindo x por 4, y = 11."
+  },
+  {
+    "id": 11,
+    "subject": "Ciências",
+    "content": "Qual é a principal função das folhas nas plantas?",
+    "alternatives": {
+      "a": "Absorver água do solo",
+      "b": "Transportar seiva",
+      "c": "Produzir energia por meio da fotossíntese",
+      "d": "Armazenar nutrientes"
+    },
+    "answer": "c",
+    "explanation": "As folhas realizam a fotossíntese para produzir energia."
+  },
+  {
+    "id": 12,
+    "subject": "Ciências",
+    "content": "Qual desses não é um planeta?",
+    "alternatives": {
+      "a": "Terra",
+      "b": "Júpiter",
+      "c": "Saturno",
+      "d": "Sol"
+    },
+    "answer": "d",
+    "explanation": "O Sol é uma estrela, não um planeta."
+  },
+  {
+    "id": 13,
+    "subject": "Ciências",
+    "content": "O que acontece com a água ao atingir 100 graus Celsius?",
+    "alternatives": {
+      "a": "Entra em ebulição",
+      "b": "Evapora lentamente",
+      "c": "Congela",
+      "d": "Se torna gás invisível instantaneamente"
+    },
+    "answer": "a",
+    "explanation": "A 100 °C, a água entra em ebulição e começa a se transformar em vapor."
+  },
+  {
+    "id": 14,
+    "subject": "Ciências",
+    "content": "Qual órgão do corpo humano é responsável por bombear o sangue?",
+    "alternatives": {
+      "a": "Pulmão",
+      "b": "Fígado",
+      "c": "Coração",
+      "d": "Estômago"
+    },
+    "answer": "c",
+    "explanation": "O coração bombeia o sangue pelo corpo."
+  },
+  {
+    "id": 15,
+    "subject": "Ciências",
+    "content": "Qual é o gás necessário para haver fogo?",
+    "alternatives": {
+      "a": "Oxigênio",
+      "b": "Nitrogênio",
+      "c": "Gás carbônico",
+      "d": "Vapor de água"
+    },
+    "answer": "a",
+    "explanation": "O oxigênio é essencial para a combustão."
+  },
+  {
+    "id": 16,
+    "subject": "Ciências",
+    "content": "Qual desses materiais costuma causar maior poluição ambiental?",
+    "alternatives": {
+      "a": "Papel",
+      "b": "Plástico",
+      "c": "Vidro",
+      "d": "Madeira"
+    },
+    "answer": "b",
+    "explanation": "O plástico demora muito para se decompor e causa grande poluição."
+  },
+  {
+    "id": 17,
+    "subject": "Ciências",
+    "content": "Qual desses animais não é mamífero?",
+    "alternatives": {
+      "a": "Baleia",
+      "b": "Morcego",
+      "c": "Jacaré",
+      "d": "Golfinho"
+    },
+    "answer": "c",
+    "explanation": "O jacaré é um réptil, enquanto os outros são mamíferos."
+  },
+  {
+    "id": 18,
+    "subject": "Ciências",
+    "content": "O que ocorre durante a fotossíntese?",
+    "alternatives": {
+      "a": "A planta vira água",
+      "b": "A planta dorme durante o dia",
+      "c": "A planta para de crescer",
+      "d": "A planta faz seu próprio alimento usando a luz do sol"
+    },
+    "answer": "d",
+    "explanation": "Na fotossíntese, a planta produz alimento usando luz solar, água e dióxido de carbono."
+  },
+  {
+    "id": 19,
+    "subject": "Ciências",
+    "content": "Qual é a fórmula molecular da água?",
+    "alternatives": {
+      "a": "H₂O",
+      "b": "HO₂",
+      "c": "2HO",
+      "d": "H₂O₂"
+    },
+    "answer": "a",
+    "explanation": "A molécula de água é H₂O, com dois átomos de hidrogênio e um de oxigênio."
+  },
+  {
+    "id": 20,
+    "subject": "Ciências",
+    "content": "Qual é a principal função do DNA nos seres vivos?",
+    "alternatives": {
+      "a": "Produzir energia",
+      "b": "Armazenar informações genéticas",
+      "c": "Transportar oxigênio",
+      "d": "Regular a temperatura"
+    },
+    "answer": "b",
+    "explanation": "O DNA armazena informações genéticas."
+  },
+  {
+    "id": 21,
+    "subject": "Geografia",
+    "content": "Qual é a capital do Brasil?",
+    "alternatives": {
+      "a": "Rio de Janeiro",
+      "b": "São Paulo",
+      "c": "Brasília",
+      "d": "Salvador"
+    },
+    "answer": "c",
+    "explanation": "Brasília é a capital federal do Brasil."
+  },
+  {
+    "id": 22,
+    "subject": "Geografia",
+    "content": "Qual é o maior estado do Brasil em extensão territorial?",
+    "alternatives": {
+      "a": "Amazonas",
+      "b": "Pará",
+      "c": "Mato Grosso",
+      "d": "Bahia"
+    },
+    "answer": "a",
+    "explanation": "O Amazonas é o maior estado em área."
+  },
+  {
+    "id": 23,
+    "subject": "Geografia",
+    "content": "O Brasil está localizado em qual continente?",
+    "alternatives": {
+      "a": "América do Norte",
+      "b": "América do Sul",
+      "c": "África",
+      "d": "Europa"
+    },
+    "answer": "b",
+    "explanation": "O Brasil fica na América do Sul."
+  },
+  {
+    "id": 24,
+    "subject": "Geografia",
+    "content": "Qual é o maior rio do Brasil?",
+    "alternatives": {
+      "a": "Rio São Francisco",
+      "b": "Rio Paraná",
+      "c": "Rio Amazonas",
+      "d": "Rio Tocantins"
+    },
+    "answer": "c",
+    "explanation": "O Rio Amazonas é o maior rio do Brasil."
+  },
+  {
+    "id": 25,
+    "subject": "Geografia",
+    "content": "Qual dessas regiões é conhecida pelo clima semiárido?",
+    "alternatives": {
+      "a": "Região Norte",
+      "b": "Região Sul",
+      "c": "Região Nordeste",
+      "d": "Região Sudeste"
+    },
+    "answer": "c",
+    "explanation": "A Região Nordeste é conhecida pelo clima semiárido."
+  },
+  {
+    "id": 26,
+    "subject": "Geografia",
+    "content": "Qual bioma brasileiro abriga a maior floresta tropical do mundo?",
+    "alternatives": {
+      "a": "Cerrado",
+      "b": "Caatinga",
+      "c": "Mata Atlântica",
+      "d": "Amazônia"
+    },
+    "answer": "d",
+    "explanation": "A Amazônia abriga a maior floresta tropical do mundo."
+  },
+  {
+    "id": 27,
+    "subject": "Geografia",
+    "content": "Qual é o ponto mais alto do Brasil?",
+    "alternatives": {
+      "a": "Pico da Neblina",
+      "b": "Pico das Agulhas Negras",
+      "c": "Pico da Bandeira",
+      "d": "Monte Roraima"
+    },
+    "answer": "a",
+    "explanation": "O Pico da Neblina é o ponto mais alto do Brasil."
+  },
+  {
+    "id": 28,
+    "subject": "Geografia",
+    "content": "Qual estado brasileiro NÃO faz parte da Região Norte?",
+    "alternatives": {
+      "a": "Acre",
+      "b": "Tocantins",
+      "c": "Maranhão",
+      "d": "Rondônia"
+    },
+    "answer": "c",
+    "explanation": "Maranhão pertence à Região Nordeste."
+  },
+  {
+    "id": 29,
+    "subject": "Geografia",
+    "content": "Qual dessas capitais brasileiras está localizada mais ao sul?",
+    "alternatives": {
+      "a": "Curitiba",
+      "b": "Porto Alegre",
+      "c": "Florianópolis",
+      "d": "São Paulo"
+    },
+    "answer": "b",
+    "explanation": "Porto Alegre está mais ao sul do que as outras capitais listadas."
+  },
+  {
+    "id": 30,
+    "subject": "Geografia",
+    "content": "O Aquífero Guarani é:",
+    "alternatives": {
+      "a": "Um rio subterrâneo localizado apenas no Brasil",
+      "b": "Uma reserva de água subterrânea que se estende por vários países",
+      "c": "Um lago artificial no sul do Brasil",
+      "d": "Um sistema de rios do Nordeste"
+    },
+    "answer": "b",
+    "explanation": "O Aquífero Guarani é uma reserva de água subterrânea que se estende por vários países."
+  },
+  {
+    "id": 31,
+    "subject": "Português",
+    "content": "Qual das palavras abaixo está escrita corretamente?",
+    "alternatives": {
+      "a": "Excessão",
+      "b": "Exceção",
+      "c": "Eçeção",
+      "d": "Exsessão"
+    },
+    "answer": "b",
+    "explanation": "A forma correta é exceção."
+  },
+  {
+    "id": 32,
+    "subject": "Português",
+    "content": "Qual é o plural da palavra cidadão?",
+    "alternatives": {
+      "a": "Cidadões",
+      "b": "Cidadães",
+      "c": "Cidadãos",
+      "d": "Cidadans"
+    },
+    "answer": "c",
+    "explanation": "O plural correto é cidadãos."
+  },
+  {
+    "id": 33,
+    "subject": "Português",
+    "content": "Em qual alternativa o verbo está no passado?",
+    "alternatives": {
+      "a": "Eu estudarei amanhã.",
+      "b": "Nós brincamos no parque.",
+      "c": "Eles cantarão na festa.",
+      "d": "Ela cozinha muito bem."
+    },
+    "answer": "b",
+    "explanation": "Brincamos está no pretérito perfeito, indicando ação passada."
+  },
+  {
+    "id": 34,
+    "subject": "Português",
+    "content": "Qual das frases possui um adjetivo?",
+    "alternatives": {
+      "a": "O menino correu rapidamente.",
+      "b": "A professora explicou a matéria.",
+      "c": "O cachorro pequeno latiu muito.",
+      "d": "Mariana chegou cedo."
+    },
+    "answer": "c",
+    "explanation": "Pequeno descreve o cachorro e é um adjetivo."
+  },
+  {
+    "id": 35,
+    "subject": "Português",
+    "content": "Qual alternativa apresenta linguagem informal?",
+    "alternatives": {
+      "a": "Prezado senhor, solicito sua presença.",
+      "b": "Favor comparecer à reunião.",
+      "c": "Cara, essa prova tava muito difícil!",
+      "d": "Informamos que o evento foi cancelado."
+    },
+    "answer": "c",
+    "explanation": "A expressão Cara, essa prova tava muito difícil! usa linguagem informal."
+  },
+  {
+    "id": 36,
+    "subject": "Português",
+    "content": "Qual é o sujeito da frase?",
+    "alternatives": {
+      "a": "Organizaram",
+      "b": "A sala",
+      "c": "Rapidamente",
+      "d": "Os alunos"
+    },
+    "answer": "d",
+    "explanation": "Os alunos é o sujeito que realiza a ação implícita na frase."
+  },
+  {
+    "id": 37,
+    "subject": "Português",
+    "content": "Em qual alternativa há uma metáfora?",
+    "alternatives": {
+      "a": "O menino correu como um foguete.",
+      "b": "Ela é uma flor delicada.",
+      "c": "O cachorro latiu a noite inteira.",
+      "d": "Choveu muito ontem."
+    },
+    "answer": "b",
+    "explanation": "Ela é uma flor delicada compara a pessoa a uma flor, caracterizando metáfora."
+  },
+  {
+    "id": 38,
+    "subject": "Português",
+    "content": "Qual alternativa apresenta oração com sentido de causa?",
+    "alternatives": {
+      "a": "Estudei muito porque queria aprender.",
+      "b": "Quando cheguei, todos saíram.",
+      "c": "Embora estivesse cansado, continuou.",
+      "d": "Se chover, não iremos."
+    },
+    "answer": "a",
+    "explanation": "A conjunção porque indica a causa da ação de estudar muito."
+  },
+  {
+    "id": 39,
+    "subject": "Português",
+    "content": "Em qual frase a crase foi utilizada corretamente?",
+    "alternatives": {
+      "a": "Vou à escola todos os dias.",
+      "b": "Entreguei o livro à Pedro.",
+      "c": "Cheguei à pé.",
+      "d": "Fui à uma festa."
+    },
+    "answer": "a",
+    "explanation": "À escola usa crase porque há a preposição a + artigo a."
+  },
+  {
+    "id": 40,
+    "subject": "Português",
+    "content": "Qual alternativa apresenta linguagem conotativa?",
+    "alternatives": {
+      "a": "A porta está aberta.",
+      "b": "O céu está nublado hoje.",
+      "c": "Meu coração virou gelo após a notícia.",
+      "d": "A água ferveu rapidamente."
+    },
+    "answer": "c",
+    "explanation": "A frase usa linguagem figurada para comparar o coração a gelo, indicando conotação."
+  }
+]
