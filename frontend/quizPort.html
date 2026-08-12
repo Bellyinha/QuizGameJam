@@ -1,207 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Literatura</title>
-    <link rel="stylesheet" href="css/quizPort.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Quiz Ciências</title>
+  <link rel="stylesheet" href="css/quizCien.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="container">
+    <div id="quiz"></div>
 
-    <!-- TÍTULO -->
-
-    <!-- <div id="title">
-      <h1>QUIZ LITERATURA</h1>
-    </div> -->
-
-    <!-- CONTAINER -->
-    <div class="container">
-
-        <!-- 1 -->
-      <div class="caixa" id="d1">
-        <h3 class="pergunta">Pergunta 1</h3>
-        <p class="perguntas">Qual das palavras abaixo está escrita <br> corretamente?</p>
-        <ol type="a">
-          <li>Excessão</li>
-          <li>Exceção</li>
-          <li>Eçeção</li>
-          <li>Exsessão</li>
-        </ol>
-        <input class="resposta" id="r1" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir1()"/>
-        <button class="enviar botao" id="c1" onclick="conferir1()">Conferir</button>
-        <p class="mudar" id="ce1"></p>
-        <button class="prox botao" id="proximo1" onclick="irProxima1()">Próxima</button>
-      </div>
-
-      <!-- 2 -->
-      <div class="caixa" id="d2">
-        <h3 class="pergunta">Pergunta 2</h3>
-        <p class="perguntas">Qual é o plural da palavra “cidadão”?</p>
-        <ol type="a">
-          <li>Cidadões</li>
-          <li>Cidadães</li>
-          <li>Cidadãos</li>
-          <li>Cidadans</li>
-        </ol>
-        <input class="resposta" id="r2" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir2()"/>
-        <button class="enviar" id="c2" onclick="conferir2()">Conferir</button>
-        <p class="mudar" id="ce2"></p>
-        <button class="prox" id="proximo2" onclick="irProxima2()">Próxima</button>
-
-      </div>
-
-      <!-- 3 -->
-      <div class="caixa" id="d3">
-        <h3 class="pergunta">Pergunta 3</h3>
-        <p class="perguntas">Em qual alternativa o verbo está no <br> passado?</p>
-        <ol type="a">
-          <li>Eu estudarei amanhã.</li>
-          <li>Nós brincamos no parque.</li>
-          <li>Eles cantarão na festa.</li>
-          <li>Ela cozinha muito bem.</li>
-        </ol>
-        <input class="resposta" id="r3" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir3()"/>
-        <button class="enviar" id="c3" onclick="conferir3()">Conferir</button>
-        <p class="mudar" id="ce3"></p>
-        <button class="prox" id="proximo3" onclick="irProxima3()">Próxima</button>
-      </div>
-
-      <!-- 4 -->
-      <div class="caixa" id="d4">
-        <h3 class="pergunta">Pergunta 4</h3>
-        <p class="perguntas">Qual das frases possui um adjetivo?</p>
-        <ol type="a">
-          <li>O menino correu rapidamente.</li>
-          <li>A professora explicou a matéria.</li>
-          <li>O cachorro pequeno latiu muito.</li>
-          <li>Mariana chegou cedo.</li>
-        </ol>
-        <input class="resposta" id="r4" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir4()"/>
-        <button class="enviar" id="c4" onclick="conferir4()">Conferir</button>
-        <p class="mudar" id="ce4"></p>
-        <button class="prox" id="proximo4" onclick="irProxima4()">Próxima</button>
-      </div>
-
-      <!-- 5 -->
-      <div class="caixa" id="d5">
-        <h3 class="pergunta">Pergunta 5</h3>
-        <p class="perguntas">Qual alternativa apresenta linguagem informal?</p>
-        <ol type="a">
-          <li>Prezado senhor, solicito sua presença.</li>
-          <li>Favor comparecer à reunião.</li>
-          <li>Cara, essa prova tava muito difícil!</li>
-          <li>Informamos que o evento foi cancelado.</li>
-        </ol>
-        <input class="resposta" id="r5" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir5()"/>
-        <button class="enviar" id="c5" onclick="conferir5()">Conferir</button>
-        <p class="mudar" id="ce5"></p>
-        <button class="prox" id="proximo5" onclick="irProxima5()">Próxima</button>
-      </div>
-
-      <!-- 6 -->
-      <div class="caixa" id="d6">
-        <h3 class="pergunta">Pergunta 6</h3>
-        <p class="perguntas">Qual é o sujeito da frase:</p>
-        <ol type="a">
-          <li>Organizaram</li>
-          <li>A sala</li>
-          <li>Rapidamente</li>
-          <li>Os alunos</li>
-        </ol>
-        <input class="resposta" id="r6" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir6()"/>
-        <button class="enviar" id="c6" onclick="conferir6()">Conferir</button>
-        <p class="mudar" id="ce6"></p>
-        <button class="prox" id="proximo6" onclick="irProxima6()">Próxima</button>
-      </div>
-
-      <!-- 7 -->
-      <div class="caixa" id="d7">
-        <h3 class="pergunta">Pergunta 7</h3>
-        <p class="perguntas">Em qual alternativa há uma metáfora?</p>
-        <ol type="a">
-          <li>O menino correu como um foguete.</li>
-          <li>Ela é uma flor delicada.</li>
-          <li>O cachorro latiu a noite inteira.</li>
-          <li>Choveu muito ontem.</li>
-        </ol>
-        <input class="resposta" id="r7" placeholder="Digite a alternativa" autocomplete="off"/>
-        <button class="enviar" id="c7" onclick="conferir7()">Conferir</button>
-        <p class="mudar" id="ce7"></p>        
-        <button class="prox" id="proximo7" onclick="irProxima7()">Próxima</button>
-      </div>
-
-      <!-- 8 -->
-      <div class="caixa" id="d8">
-        <h3 class="pergunta">Pergunta 8</h3>
-        <p class="perguntas">Qual alternativa apresenta oração com <br> sentido de causa?</p>
-        <ol type="a">
-          <li>Estudei muito porque queria aprender.</li>
-          <li>Quando cheguei, todos saíram.</li>
-          <li>Embora estivesse cansado, continuou.</li>
-          <li>Se chover, não iremos.</li>
-        </ol>
-        <input class="resposta" id="r8" placeholder="Digite a alternativa" autocomplete="off"/>
-        <button class="enviar" id="c8" onclick="conferir8()">Conferir</button>
-        <p class="mudar" id="ce8"></p>        
-        <button class="prox" id="proximo8" onclick="irProxima8()">Próxima</button>
-      </div>
-
-      <!-- 9 -->
-      <div class="caixa" id="d9">
-        <h3 class="pergunta">Pergunta 9</h3>
-        <p class="perguntas">Em qual frase a crase foi utilizada <br> corretamente?</p>
-        <ol type="a">
-          <li>Vou à escola todos os dias.</li>
-          <li>Entreguei o livro à Pedro.</li>
-          <li>Cheguei à pé.</li>
-          <li>Fui à uma festa.</li>
-        </ol>
-        <input class="resposta" id="r9" placeholder="Digite a alternativa" autocomplete="off"/>
-        <button class="enviar" id="c9" onclick="conferir9()">Conferir</button>
-        <p class="mudar" id="ce9"></p>        
-        <button class="prox" id="proximo9" onclick="irProxima9()">Próxima</button>
-      </div>
-
-      <!-- 10 -->
-      <div class="caixa" id="d10">
-        <h3 class="pergunta">Pergunta 10</h3>
-        <p class="perguntas">Qual alternativa apresenta linguagem <br> conotativa?</p>
-        <ol type="a">
-          <li>A porta está aberta.</li>
-          <li>O céu está nublado hoje.</li>
-          <li>Meu coração virou gelo após a notícia.</li>
-          <li>A água ferveu rapidamente.</li>
-        </ol>
-        <input class="resposta" id="r10" placeholder="Digite a alternativa" autocomplete="off"/>
-        <button class="enviar" id="c10" onclick="conferir10()">Conferir</button>
-        <p class="mudar" id="ce10"></p>        
-        <button class="prox" id="proximo10" onclick="irProxima10()">Próxima</button>
-      </div>
-
-      <!-- Resultado final -->
-      <div id="final">
-        <h2>Parabéns!</h2>
-        <p id="result">Você acertou <p id="pontos"></p> </p>
-        <p id="frase">"A pátria não é a raça, não é o meio, não é o conjunto dos aparelhos ecnômicos e políticos: é o idioma criado ou herdado pelo povo."
-
-Olavo Bilac</p>
-
-        <button id="voltar" onclick="document.location.href = 'quizPort.html'">Tentar novamente</button>
-        <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
-      </div>
-
-
+    <!-- Resultado final -->
+    <div id="final" style="display:none;">
+      <h2>Parabéns!</h2>
+      <p id="result">Você acertou <span id="pontos"></span></p>
+      <p id="frase">"Os benefícios da ciência não são para os cientistas, e sim para humanidade!"<br>Louis Pasteur</p>
+      <button id="voltar" onclick="location.reload()">Tentar novamente</button>
+      <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
     </div>
+  </div>
 
-    <div class="btn-home">
-      <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
-    </div>
-    
-    <script src="js/portugues.js"></script>
+  <div class="btn-home">
+    <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+  </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="js/portugues.js"></script> 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

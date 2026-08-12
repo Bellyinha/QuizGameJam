@@ -83,19 +83,13 @@ body {
 }
 
 .caixa {
-  background-color: #fffed9;
-  padding: 35px;
-  margin-top: 20px;
-  border-radius: 20px;
-  border: 2px solid #53614b;
-  /* box-shadow: 10px 10px 10px rgb(63, 63, 63); */
-  display: none;
-  position: relative;
-  min-width: 240px;
-}
-
-#d1 {
-  display: block;
+    background-color: #fffed9;
+    padding: 35px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #53614b;
+    position: relative;
+    min-width: 240px;
 }
 
 /* FINAL */

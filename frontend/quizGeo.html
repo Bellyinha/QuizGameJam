@@ -1,201 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Geografia</title>
-    <link rel="stylesheet" href="css/quizGeo.css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <!-- TÍTULO -->
-    <!-- <div id="title">
-      <h1>QUIZ GEOGRAFIA</h1>
-    </div> -->
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Ciências</title>
+  <link rel="stylesheet" href="css/quizCien.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div id="quiz"></div>
 
-    <!-- CONTAINER -->
-    <div class="container">
-
-      <!-- 1 -->
-      <div class="caixa" id="d1">
-        <h3 class="pergunta">Pergunta 1</h3>
-        <p class="perguntas">Qual é a capital do Brasil?</p>
-        <ol type="a">
-          <li>Rio de Janeiro</li>
-          <li>São Paulo</li>
-          <li>Brasília</li>
-          <li>Salvador</li>
-        </ol>
-        <input class="resposta" id="r1" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir1()"/>
-        <button class="enviar botao" id="c1" onclick="conferir1()">Conferir</button>
-        <p class="mudar" id="ce1"></p>
-        <button class="prox botao" id="proximo1" onclick="irProxima1()">Próxima</button>
-      </div>
-
-      <!-- 2 -->
-      <div class="caixa" id="d2">
-        <h3 class="pergunta">Pergunta 2</h3>
-        <p class="perguntas">Qual é o maior estado do Brasil em <br> extensão territorial?</p>
-        <ol type="a">
-          <li>Amazonas</li>
-          <li>Pará</li>
-          <li>Mato Grosso</li>
-          <li>Bahia</li>
-        </ol>
-        <input class="resposta" id="r2" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir2()"/>
-        <button class="enviar" id="c2" onclick="conferir2()">Conferir</button>
-        <p class="mudar" id="ce2"></p>
-        <button class="prox" id="proximo2" onclick="irProxima2()">Próxima</button>
-
-      </div>
-
-      <!-- 3 -->
-      <div class="caixa" id="d3">
-        <h3 class="pergunta">Pergunta 3</h3>
-        <p class="perguntas">O Brasil está localizado em qual <br> continente?</p>
-        <ol type="a">
-          <li>América do Norte</li>
-          <li>América do Sul</li>
-          <li>África</li>
-          <li>Europa</li>
-        </ol>
-        <input class="resposta" id="r3" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir3()"/>
-        <button class="enviar" id="c3" onclick="conferir3()">Conferir</button>
-        <p class="mudar" id="ce3"></p>
-        <button class="prox" id="proximo3" onclick="irProxima3()">Próxima</button>
-      </div>
-
-      <!-- 4 -->
-      <div class="caixa" id="d4">
-        <h3 class="pergunta">Pergunta 4</h3>
-        <p class="perguntas">Qual é o maior rio do Brasil?</p>
-        <ol type="a">
-          <li>Rio São Francisco</li>
-          <li>Rio Paraná</li>
-          <li>Rio Amazonas</li>
-          <li>Rio Tocantins</li>
-        </ol>
-        <input class="resposta" id="r4" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir4()"/>
-        <button class="enviar" id="c4" onclick="conferir4()">Conferir</button>
-        <p class="mudar" id="ce4"></p>
-        <button class="prox" id="proximo4" onclick="irProxima4()">Próxima</button>
-      </div>
-
-      <!-- 5 -->
-      <div class="caixa" id="d5">
-        <h3 class="pergunta">Pergunta 5</h3>
-        <p class="perguntas">Qual dessas regiões é conhecida pelo <br> clima semiárido?</p>
-        <ol type="a">
-          <li>Região Norte</li>
-          <li>Região Sul</li>
-          <li>Região Nordeste</li>
-          <li>Região Sudeste</li>
-        </ol>
-        <input class="resposta" id="r5" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir5()"/>
-        <button class="enviar" id="c5" onclick="conferir5()">Conferir</button>
-        <p class="mudar" id="ce5"></p>
-        <button class="prox" id="proximo5" onclick="irProxima5()">Próxima</button>
-      </div>
-
-      <!-- 6 -->
-      <div class="caixa" id="d6">
-        <h3 class="pergunta">Pergunta 6</h3>
-        <p class="perguntas">Qual bioma brasileiro abriga a maior <br> floresta tropical do mundo?</p>
-        <ol type="a">
-          <li>Cerrado</li>
-          <li>Caatinga</li>
-          <li>Mata Atlântica</li>
-          <li>Amazônia</li>
-        </ol>
-        <input class="resposta" id="r6" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir6()"/>
-        <button class="enviar" id="c6" onclick="conferir6()">Conferir</button>
-        <p class="mudar" id="ce6"></p>
-        <button class="prox" id="proximo6" onclick="irProxima6()">Próxima</button>
-      </div>
-
-      <!-- 7 -->
-      <div class="caixa" id="d7">
-        <h3 class="pergunta">Pergunta 7</h3>
-        <p class="perguntas">Qual é o ponto mais alto do Brasil?</p>
-        <ol type="a">
-          <li>Pico da Neblina</li>
-          <li>Pico das Agulhas Negras</li>
-          <li>Pico da Bandeira</li>
-          <li>Monte Roraima</li>
-        </ol>
-        <input class="resposta" id="r7" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir7()" />
-        <button class="enviar" id="c7" onclick="conferir7()">Conferir</button>
-        <p class="mudar" id="ce7"></p>        
-        <button class="prox" id="proximo7" onclick="irProxima7()">Próxima</button>
-      </div>
-
-      <!-- 8 -->
-      <div class="caixa" id="d8">
-        <h3 class="pergunta">Pergunta 8</h3>
-        <p class="perguntas">Qual estado brasileiro NÃO faz parte da <br> Região Norte?</p>
-        <ol type="a">
-          <li>Acre</li>
-          <li>Tocantins</li>
-          <li>Maranhão</li>
-          <li>Rondônia</li>
-        </ol>
-        <input class="resposta" id="r8" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir8()"/>
-        <button class="enviar" id="c8" onclick="conferir8()">Conferir</button>
-        <p class="mudar" id="ce8"></p>        
-        <button class="prox" id="proximo8" onclick="irProxima8()">Próxima</button>
-      </div>
-
-      <!-- 9 -->
-      <div class="caixa" id="d9">
-        <h3 class="pergunta">Pergunta 9</h3>
-        <p class="perguntas">Qual dessas capitais brasileiras está <br> localizada mais ao sul?</p>
-        <ol type="a">
-          <li>Curitiba</li>
-          <li>Porto Alegre</li>
-          <li>Florianópolis</li>
-          <li>São Paulo</li>
-        </ol>
-        <input class="resposta" id="r9" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir9()"/>
-        <button class="enviar" id="c9" onclick="conferir9()">Conferir</button>
-        <p class="mudar" id="ce9"></p>        
-        <button class="prox" id="proximo9" onclick="irProxima9()">Próxima</button>
-      </div>
-
-      <!-- 10 -->
-      <div class="caixa" id="d10">
-        <h3 class="pergunta">Pergunta 10</h3>
-        <p class="perguntas">O Aquífero Guarani é:</p>
-        <ol type="a">
-          <li>Um rio subterrâneo localizado apenas no Brasil</li>
-          <li>Uma reserva de água subterrânea que se <br> estende por vários países</li>
-          <li>Um lago artificial no sul do Brasil</li>
-          <li>Um sistema de rios do Nordeste</li>
-        </ol>
-        <input class="resposta" id="r10" placeholder="Digite a alternativa" autocomplete="off" onkeydown="if(event.keyCode === 13) conferir10()"/>
-        <button class="enviar" id="c10" onclick="conferir10()">Conferir</button>
-        <p class="mudar" id="ce10"></p>        
-        <button class="prox" id="proximo10" onclick="irProxima10()">Próxima</button>
-      </div>
-
-      <!-- Resultado final -->
-      <div id="final">
-        <h2>Parabéns!</h2>
-        <p id="result">Você acertou <p id="pontos"></p> </p>
-        <p id="frase">"A geografia é a pintura do tempo. Ela nos mostra as cores das estações, as mudanças do clima e as transformações da paisagem"</p>
-
-        <button id="voltar" onclick="document.location.href = 'quizGeo.html'">Tentar novamente</button>
-        <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
-      </div>
+    <!-- Resultado final -->
+    <div id="final" style="display:none;">
+      <h2>Parabéns!</h2>
+      <p id="result">Você acertou <span id="pontos"></span></p>
+      <p id="frase">"Os benefícios da ciência não são para os cientistas, e sim para humanidade!"<br>Louis Pasteur</p>
+      <button id="voltar" onclick="location.reload()">Tentar novamente</button>
+      <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
     </div>
+  </div>
 
-    <div class="btn-home">
-      <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
-    </div>
+  <div class="btn-home">
+    <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+  </div>
 
-    <script src="js/geografia.js"></script>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
+  <script type="module" src="js/geografia.js"></script> 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
