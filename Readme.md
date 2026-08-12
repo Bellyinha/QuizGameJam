@@ -1,17 +1,17 @@
 # Game Jam
 
-Projeto de quiz educativo com frontend em HTML, CSS e JavaScript e estrutura de backend em Node.js com Prisma e MySQL.
+Projeto de quiz educativo com frontend em HTML, CSS e JavaScript.
 
 ## Visão geral
 
-O projeto já contempla a parte visual do jogo e também uma API/estrutura de dados para integrar o banco. Os temas disponíveis até o momento são:
+O projeto já contempla a parte visual do jogo e também a lógica para o funcionamento do quiz. Os temas disponíveis até o momento são:
 
 - Matemática
 - Ciências
 - Geografia
 - Língua Portuguesa
 
-A estrutura do backend foi iniciada com Prisma para gerenciar o modelo de perguntas e comunicação com o banco de dados.
+As perguntas e suas respectivas informações são mantidas em um arquivo JSON.
 
 ## Estrutura do projeto
 
