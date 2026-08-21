@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -6,15 +7,14 @@
   font-family: 'Barlow', sans-serif;
 }
 
-body {
-  background-image: url(../img/geoFundo.png);
+ /* body {
+  background-image: url(../img/cienFundo.png);
   background-position: center; /* Centraliza horizontal e verticalmente */
-  background-repeat: no-repeat; /* Evita repetição */
-  background-size: cover; /* Cobre o container sem distorcer */
-  height: 100vh;
-}
+  /* background-repeat: no-repeat; /* Evita repetição */
+  /* background-size: cover; /* Cobre o container sem distorcer */
+  /* height: 100vh; */
 
-/* #title {
+ /* #title {
   color: white;
   font-size: 20px;
   text-shadow: 4px 4px 5px black;
@@ -22,17 +22,50 @@ body {
   border-radius: 10px;
   padding: 8px;
   border: 1px solid black;
-  margin: 10px;
+  margin: 10px; 
   width: 340px;
   text-align: center;
-} */
+}   */
 
 .container {
-  font-size: 20px;
+  font-size: 25px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.text-container {
+  margin-bottom: 20px;
+}
+
+.quiz-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+#titulo-materia {
+  text-align: center;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 100px;
+}
+
+.math {
+  color: #945252;
+}
+
+.cien {
+  color: #57bbc2;
+}
+
+.geo {
+  color: #27ae60;
+}
+
+.port {
+  color: #c58114;
 }
 
 .pergunta {
@@ -48,7 +81,8 @@ body {
 .prox,
 #voltar,
 #p-inicial {
-  padding: 8px;
+  font-size: 15px;
+  padding: 10px;
   border-radius: 6px;
   border: 1px solid #53614b;
   margin-top: 10px;
@@ -56,10 +90,12 @@ body {
 }
 
 .resposta {
-  padding: 8px;
+  font-size: 15px;
+  padding: 10px;
   border-radius: 6px;
   border: 1px solid #53614b;
   margin-top: 10px;
+  margin-right: 10px;
   background-color: #fff;
 }
 
@@ -83,30 +119,26 @@ body {
 }
 
 .caixa {
-  background-color: #fffed9;
-  padding: 35px;
-  margin-top: 20px;
-  border-radius: 20px;
-  border: 2px solid #53614b;
-  /* box-shadow: 10px 10px 10px rgb(63, 63, 63); */
-  display: none;
-  position: relative;
-  min-width: 240px;
-}
-
-#d1 {
-  display: block;
+    background-color: #fffed9;
+    padding: 70px;
+    /* margin-top: 20px; */
+    border-radius: 20px;
+    border: 2px solid #53614b;
+    position: relative;
+    min-width: 300px;
+    max-width: 600px;
 }
 
 /* FINAL */
 #final {
+  font-size: 25px;
   color: #53614b;
   background-color: #fffed9;
   border-radius: 30px;
   padding: 25px;
   border: 1px solid #53614b;
   text-align: center;
-  width: 500px;
+  width: 600px;
   /* box-shadow: 12px 12px 12px rgb(59, 59, 59); */
   display: none;
 }
@@ -115,13 +147,13 @@ body {
   text-shadow: 2px 2px 2px black;
 } */
 
-#pontos {
-  font-size: 28px;
+#pontos{
+  font-size: 25px;
 }
 
 #frase {
   margin: 15px;
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
 }
 

@@ -2,19 +2,25 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz Ciências</title>
-  <link rel="stylesheet" href="css/quizCien.css">
+  <title>Quiz Matemática</title>
+  <link rel="stylesheet" href="css/quizStyle.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="container">
-    <div id="quiz"></div>
+    <div class="text-container">
+      <h1 id="titulo-materia" class="math">Matemática</h1>
+    </div>
+    <div classe="quiz-container">
+        <div id="quiz"></div>
+      </div>
+    
 
     <!-- Resultado final -->
     <div id="final" style="display:none;">
       <h2>Parabéns!</h2>
       <p id="result">Você acertou <span id="pontos"></span></p>
-      <p id="frase">"Os benefícios da ciência não são para os cientistas, e sim para humanidade!"<br>Louis Pasteur</p>
+      <p id="frase">"Descobrir algo em matemática é superar uma inibição e uma tradição. Não podemos seguir em frente se não formos subversivos."<br>Laurent Schwartz</p>
       <button id="voltar" onclick="location.reload()">Tentar novamente</button>
       <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
     </div>
