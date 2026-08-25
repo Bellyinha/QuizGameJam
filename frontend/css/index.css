@@ -73,6 +73,31 @@ button {
   color: #9c9754;
 } */
 
+.botaoDesafio {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #d8d8d8;
+  position: relative;
+}
+.botaoDesafio::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #d8d8d8;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.botaoDesafio:hover::after {
+  width: 100%;
+}
+.botaoDesafio:hover {
+  border: 2px solid darkgray;
+  color: black;
+}
+
 .botaoMath {
   background-color: transparent;
   color: #945252;
