@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../img/indexFundo.png);
+  background-image: url(../img/indexFundo.jpg);
   background-position: center; /* Centraliza horizontal e verticalmente */
   background-repeat: no-repeat; /* Evita repetição */
   background-size: cover; /* Cobre o container sem distorcer */
@@ -24,14 +24,14 @@ body {
 
 
 #title {
-  color: #f3f3f3;
-  font-size: 100px;
+  color: #a0a0a0;
+  font-size: 150px;
   /* text-shadow: 15px 15px 20px black; */
   background-color: transparent;
   border-radius: 10px;
   padding: 8px;
   margin-bottom: 5px;
-  border: 3px solid #d8d8d8;
+  border: 3px solid #969696;
   cursor: default;
 }
 
@@ -44,7 +44,7 @@ button {
   margin: 4px;
   border-radius: 10px;
   margin-top: 15px;
-  font-size: 25px;
+  font-size: 40px;
   /* box-shadow: 10px 10px 15px black; */
   font-weight: bold;
   flex-direction: row;
@@ -75,8 +75,8 @@ button {
 
 .botaoDesafio {
   background-color: transparent;
-  color: white;
-  border: 2px solid #d8d8d8;
+  color: #bfa200;
+  border: 2px solid #bfa200;
   position: relative;
 }
 .botaoDesafio::after {
@@ -86,7 +86,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #d8d8d8;
+  background-color: #bfa200;
   transition: width 0.4s ease;
   z-index: -1;
 }
@@ -94,14 +94,13 @@ button {
   width: 100%;
 }
 .botaoDesafio:hover {
-  border: 2px solid darkgray;
-  color: black;
+  color: white;
 }
 
 .botaoMath {
   background-color: transparent;
-  color: #945252;
-  border: 2px solid #945252;
+  color: #923434;
+  border: 2px solid #923434;
   position: relative;
 }
 
@@ -112,7 +111,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #945252;
+  background-color: #923434;
   transition: width 0.4s ease;
   z-index: -1;
 }
@@ -127,8 +126,8 @@ button {
 
 .botaoCien {
   background-color: transparent;
-  color: #57bbc2;
-  border: 2px solid #57bbc2;
+  color: #408c91;
+  border: 2px solid #408c91;
   position: relative;
 }
 
@@ -139,7 +138,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #57bbc2;
+  background-color: #408c91;
   transition: width 0.4s ease;
   z-index: -1;
 }
@@ -154,8 +153,8 @@ button {
 
 .botaoGeo {
   background-color: transparent;
-  color: #27ae60;
-  border: 2px solid #27ae60;
+  color: #1f8d4d;
+  border: 2px solid #1f8d4d;
   position: relative;
 }
 
@@ -166,7 +165,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #27ae60;
+  background-color: #1f8d4d;
   transition: width 0.4s ease;
   z-index: -1;
 }
@@ -181,8 +180,8 @@ button {
 
 .botaoPort {
   background-color: transparent;
-  color: #c58114;
-  border: 2px solid #c58114;
+  color: #b11399;
+  border: 2px solid #b11399;
   position: relative;
 }
 
@@ -193,7 +192,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #c58114;
+  background-color: #b11399;
   transition: width 0.5s ease;
   z-index: -1;
 }
@@ -206,7 +205,37 @@ button {
   color: white;
 }
 
+#title::selection {
+  background-color: #adadad; /* Cor de fundo da seleção */
+  color: #000000;              /* Cor do texto selecionado */
+}
+
+.botaoMath::selection {
+  background-color: #923434; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
+}
+
+.botaoCien::selection {
+  background-color: #408c91; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
+}
+
+.botaoGeo::selection {
+  background-color: #1f8d4d; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
+}
+
+.botaoPort::selection {
+  background-color: #b11399; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
+}
+
+.botaoDesafio::selection {
+  background-color: #bfa200; /* Cor de fundo da seleção */
+  color: #fff;              /* Cor do texto selecionado */
+}
+
 ::selection {
-  background-color: #a1bd92; /* Cor de fundo da seleção */
+  background-color: #fff; /* Cor de fundo da seleção */
   color: #fff;              /* Cor do texto selecionado */
 }

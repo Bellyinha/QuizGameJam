@@ -2,34 +2,33 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz Ciências</title>
-  <link rel="stylesheet" href="css/quizStyle.css">
+  <title>Desafio de Ciências</title>
+  <link rel="stylesheet" href="css/desafio.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <div class="container">
-    <div>
-      <h1 id="titulo-materia" class="cien">Ciências</h1>
-      <div id="quiz"></div>
-    </div>
-    
+<body class="ciencias">
 
-    <!-- Resultado final -->
-    <div id="final" style="display:none;">
-      <h2>Parabéns!</h2>
-      <p id="result">Você acertou <span id="pontos"></span></p>
-      <p id="frase">"Os benefícios da ciência não são para os cientistas, e sim para humanidade!"<br>Louis Pasteur</p>
-      <button id="voltar" onclick="location.reload()">Tentar novamente</button>
-      <button id="p-inicial" onclick="document.location.href = 'index.html'">Voltar para página inicial</button>
+  <div id="container">
+
+    <div class="btn-home">
+      <a href="index.html">
+        <ion-icon name="home-outline"></ion-icon>
+      </a>
     </div>
+    <div class="title">Tabela Periódica</div>
+    <div id="score">Pontos: 0</div>
+
   </div>
 
-  <div class="btn-home">
-    <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
-  </div>
+  <script type="module" src="js/ciencias.js"></script>
 
-  <script type="module" src="js/ciencias.js"></script> 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+  </script>
+
+  <script nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+  </script>
+
 </body>
 </html>
