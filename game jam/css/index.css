@@ -22,6 +22,14 @@ body {
   height: 100vh;
 }
 
+.btn-home {
+  width: 240px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 28px;
+}
+
 
 #title {
   color: #a0a0a0;
