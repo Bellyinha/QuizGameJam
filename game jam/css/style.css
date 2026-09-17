@@ -16,6 +16,25 @@ body {
     background-position: center;
 }
 
+/* Segmenta os parágrafos apenas quando estão dentro de .game-over */
+.game-area.game-over p {
+    color: #333;            
+    text-align: center;   
+    justify-content: center;
+    font-size: 1.2rem;  
+    margin: 10px;
+}
+
+.game-area.game-over {
+    gap: 0px;
+    width: 400px;
+    display: flex;
+    flex-direction: column; 
+    border: 2px solid #e9e9e9; 
+    border-radius: 25px; 
+    background-color: #fdfdfd;
+}
+
 .ciencias {
   background-image: url(../img/azul.png);
 }
@@ -41,7 +60,7 @@ body {
   font-size: 4rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Botão voltar para inicio */
@@ -63,10 +82,9 @@ body {
 
 #container {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .game-area {
@@ -141,4 +159,9 @@ button.word {
 
 .locked {
   pointer-events: none;
+}
+
+::selection {
+  background-color: #d8d8d8; /* Cor de fundo da seleção */
+  color: #000000;              /* Cor do texto selecionado */
 }

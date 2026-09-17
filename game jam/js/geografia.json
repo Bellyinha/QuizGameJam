@@ -98,5 +98,19 @@
   { "id": 97, "content": "Nepal", "answer": "Katmandu" },
   { "id": 98, "content": "Mongólia", "answer": "Ulã Bator" },
   { "id": 99, "content": "Cazaquistão", "answer": "Astana" },
-  { "id": 100, "content": "Uzbequistão", "answer": "Tasquent" }
+  { "id": 100, "content": "Uzbequistão", "answer": "Tasquent" },
+  { "id": 101, "content": "Coreia do Norte", "answer": "Pyongyang" },
+  { "id": 102, "content": "Taiwan", "answer": "Taipé" },
+  { "id": 103, "content": "Maldívias", "answer": "Malé" },
+  { "id": 104, "content": "Mônaco", "answer": "Mônaco" },
+  { "id": 105, "content": "Vaticano", "answer": "Cidade do Vaticano" },
+  { "id": 106, "content": "Republica Democrática do Congo", "answer": "Kinshasa" },
+  { "id": 107, "content": "Sudão", "answer": "Cartum" },
+  { "id": 108, "content": "Cabo Verde", "answer": "Praia" },
+  { "id": 109, "content": "Camarões", "answer": "Yaoundé" },
+  { "id": 110, "content": "Costa do Marfim", "answer": "Yamoussoukro" },
+  { "id": 111, "content": "Libia", "answer": "Tripoli" },
+  { "id": 112, "content": "Madagáscar", "answer": "Antananarivo" },
+  { "id": 113, "content": "Afeganistão", "answer": "Cabul" },
+  { "id": 114, "content": "Tuvalu", "answer": "Funafuti" }
 ]

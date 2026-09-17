@@ -98,6 +98,5 @@
   { "id": 97, "content": "Easy", "answer": "Fácil" },
   { "id": 98, "content": "Difficult", "answer": "Difícil" },
   { "id": 99, "content": "Beautiful", "answer": "Bonito" },
-  { "id": 100, "content": "Strong", "answer": "Forte" },
-  { "id": 101, "content": "Weak", "answer": "Fraco" }
+  { "id": 100, "content": "Strong", "answer": "Forte" }
 ]

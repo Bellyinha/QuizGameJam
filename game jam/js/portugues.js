@@ -8,6 +8,9 @@ let selectedTranslation = null; //Tradção das palavras selecionadas
 let currentWords = []; //Lista das palavras da vez
 let matchedPairs = 0; //Quantos pares foram combinados
 
+// Variáveis para controlar o deck e evitar repetição excessiva - NOVO
+let remainingWords = [];
+
 //Função para atualizar o placar `score` no html
 function updateScore() {
     scoreElement.textContent = `Pontos: ${score}`;
@@ -20,8 +23,18 @@ function shuffle(array) {
 
 //Função para sortear 5 palavras da lista do json
 function getRandomWords(lista, amount = 5) {
-    const shuffled = shuffle(lista);
-    return shuffled.slice(0, amount);
+    // const shuffled = shuffle(lista); - antigo
+    // return shuffled.slice(0, amount); - antigo
+
+    // NOVO
+    // Se o deck estiver vazio, retorna vazio (sinalizando o fim do jogo)
+    if (remainingWords.length === 0) {
+        return [];
+    }
+
+    // Pega o menor valor entre 5 e o que restou no deck (ex: se restaram 3, pega 3)
+    const takeCount = Math.min(amount, remainingWords.length);
+    return remainingWords.splice(0, takeCount);
 }
 
 //Função para gerar um botão para as palavras sorteadas
@@ -89,7 +102,14 @@ function checkMatch() {
         selectedTranslation = null;
 
         //Filtro para quando combinar todas
-        if (matchedPairs === 5) {
+        //     if (matchedPairs === 5) {
+        //         setTimeout(() => {
+        //             loadRound();
+        //         }, 1000);
+        //     }
+        // }
+        //NOVO apenas o if
+        if (matchedPairs === currentWords.length) {
             setTimeout(() => {
                 loadRound();
             }, 1000);
@@ -110,7 +130,7 @@ function checkMatch() {
         setTimeout(() => {
             eng.classList.remove('wrong', 'selected');
             tra.classList.remove('wrong', 'selected');
-        }, 2000);
+        }, 1000);
     }
 }
 
@@ -119,7 +139,15 @@ function loadRound() {
     matchedPairs = 0;
 
     document.querySelector('.game-area')?.remove();
+    // NOVO
+    currentWords = getRandomWords(window.wordList, 5);
 
+    // Se o deck acabou e não há mais palavras, mostra a tela final de pontuação
+    if (currentWords.length === 0) {
+        showGameOver();
+        return;
+    }
+    // Fim do NOVO
     const gameArea = document.createElement('div'); //Gera a div com a class 'game-area'
     gameArea.classList.add('game-area');
 
@@ -129,7 +157,7 @@ function loadRound() {
     const translationColumn = document.createElement('div'); //Mesma coisa da anterior, para tradução
     translationColumn.classList.add('column');
 
-    currentWords = getRandomWords(window.wordList, 5);
+    // currentWords = getRandomWords(window.wordList, 5);
 
     const translations = shuffle(currentWords);
 
@@ -151,11 +179,33 @@ function loadRound() {
     container.appendChild(gameArea); //inclui a div gameArea no container original definido no arquivo HTML fixo
 }
 
+// NOVA função
+function showGameOver() {
+    let title = document.getElementById('title');
+    let scoreElement = document.getElementById('score');
+    const gameOverArea = document.createElement('div');
+    gameOverArea.classList.add('game-area', 'game-over');
+    title.innerHTML = '';
+    scoreElement.innerHTML = '';
+    gameOverArea.innerHTML = `
+        <p><strong>Fim de Jogo!</strong></p>
+        <p>Sua pontuação final foi: <strong>${score} pontos</strong></p>
+        <p>Pontuação máxima possível: <strong>${window.wordList.length} pontos</strong></p>
+        <p>Obrigada por jogar!</p>
+        <p>Você pode voltar para a tela inicial pela <strong>casinha</strong> e tentar novos temas.</p>
+    `;
+
+    container.appendChild(gameOverArea);
+}
+
 //Carrega os dados do arquivo `portugues.json` dentro da pasta 'js'
 fetch('./js/portugues.json')
     .then((response) => response.json())
     .then((lista) => {
         window.wordList = lista;
+
+        // Inicializa o deck embaralhado assim que o JSON é carregado
+        remainingWords = shuffle(window.wordList);
 
         updateScore();
         loadRound();
