@@ -58,9 +58,15 @@ body {
 .title {
   font-family: 'Oswald', sans-serif;
   font-size: 4rem;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   /* margin-bottom: 20px; */
+}
+
+.title {
+  -webkit-text-stroke-width: 1px; /* Espessura da borda */
+  -webkit-text-stroke-color: #292929; /* Cor da borda */
+  color: #fff; /* Cor de dentro do texto (preenchimento) */
 }
 
 /* Botão voltar para inicio */
@@ -105,11 +111,7 @@ body {
     max-width: 350px;
 }
 
-button.word {
-    border: 2px solid #ebebeb; /* Força a cor vermelha e a espessura */
-    border-radius: 6px;                  /* Arredonda levemente as bordas */
-    padding: 10px 15px;                  /* Espaçamento interno */
-}
+
 
 #score {
   font-size: 1.5rem;
@@ -149,19 +151,25 @@ button.word {
 
 .correct {
   background: #b7e1b8;
-  color: rgb(87, 112, 84);
+  color: #577054;
 }
 
 .wrong {
   background: #d3716c;
-  color: rgb(143, 29, 29);
+  color: #8f1d1d;
 }
 
 .locked {
   pointer-events: none;
 }
 
+button.word {
+    border: 2px solid #535353;
+    border-radius: 6px;                  
+    padding: 10px 15px;                  
+}
+
 ::selection {
-  background-color: #d8d8d8; /* Cor de fundo da seleção */
-  color: #000000;              /* Cor do texto selecionado */
+  background-color: #d8d8d8; 
+  color: #000000;              
 }
