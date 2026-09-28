@@ -30,18 +30,36 @@ body {
   right: 28px;
 }
 
+#title {
+  border: 3px solid #a0a0a0;
+  border-radius: 10px;
+}
 
 #title {
   color: #a0a0a0;
-  font-size: 150px;
+  font-size: 140px;
   /* text-shadow: 15px 15px 20px black; */
   background-color: transparent;
-  border-radius: 10px;
   padding: 8px;
   margin-bottom: 5px;
-  border: 3px solid #969696;
   cursor: default;
 }
+
+/* #title { */
+  /* Define o gradiente de fundo (da esquerda para a direita) */
+  /* background: linear-gradient(to right, #a0a0a0, #838383, #a0a0a0); */
+  
+  /* Recorta o fundo para preencher apenas o texto */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  
+  /* Torna a cor original do texto transparente para revelar o gradiente */
+  /* -webkit-text-fill-color: transparent; */
+  /* color: transparent; */
+  
+  /* Garante que o efeito funcione bem em blocos de linha */
+  /* display: inline-block;  */
+/* }  */
 
 .button {
   flex-direction: row;
@@ -80,6 +98,30 @@ button {
   border: 3px solid #9c9754;
   color: #9c9754;
 } */
+
+.botaoTuto {
+  background-color: transparent;
+  color: #1573b3;
+  border: 2px solid #1573b3;
+  position: relative;
+}
+.botaoTuto::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1573b3;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.botaoTuto:hover::after {
+  width: 100%;
+}
+.botaoTuto:hover {
+  color: white;
+}
 
 .botaoDesafio {
   background-color: transparent;

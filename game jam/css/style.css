@@ -55,6 +55,10 @@ body {
   background-image: url(../img/amarelo.png);
 }
 
+.tutorial {
+  background-image: url(../img/fundoTuto.png);
+}
+
 .title {
   font-family: 'Oswald', sans-serif;
   font-size: 4rem;
