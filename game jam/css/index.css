@@ -151,9 +151,6 @@ button {
 }
 .botaoDesafio:hover {
   color: white;
-  .p-b{
-    display: block;
-  }
 }
 
 .botaoMath {
@@ -181,9 +178,6 @@ button {
 
 .botaoMath:hover {
   color: white;
-  .p-b{
-    display: block;
-  }
 }
 
 .botaoCien {
@@ -211,9 +205,6 @@ button {
 
 .botaoCien:hover {
   color: white;
-  .p-b{
-    display: block;
-  }
 }
 
 .botaoGeo {
@@ -241,9 +232,6 @@ button {
 
 .botaoGeo:hover {
   color: white;
-  .p-b{
-    display: block;
-  }
 }
 
 .botaoPort {
@@ -267,9 +255,6 @@ button {
 
 .botaoPort:hover::after {
   width: 100%;
-  .p-b{
-    display: block;
-  }
 }
 
 .botaoPort:hover {
