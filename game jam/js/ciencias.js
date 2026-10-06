@@ -190,7 +190,7 @@ function showGameOver() {
     gameOverArea.innerHTML = `
         <p><strong>Fim de Jogo!</strong></p>
         <p>Sua pontuação final foi: <strong>${score} pontos</strong></p>
-        <p>Pontuação máxima possível: <strong>${window.wordList.length} pontos</strong></p>
+        <p>Pontuação máxima possível: <strong>50 pontos</strong></p>
         <p>Obrigada por jogar!</p>
         <p>Você pode voltar para a tela inicial pela <strong>casinha</strong> e tentar novos temas.</p>
     `;
@@ -206,7 +206,7 @@ fetch('./js/ciencias.json')
         window.wordList = lista;
 
         // Inicializa o deck embaralhado assim que o JSON é carregado
-        remainingWords = shuffle(window.wordList);
+        remainingWords = shuffle(window.wordList).slice(0, 50);
 
         updateScore();
         loadRound();
