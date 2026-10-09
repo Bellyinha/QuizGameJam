@@ -118,7 +118,9 @@ function checkMatch() {
         selectedEnglish.classList.add('wrong');
         selectedTranslation.classList.add('wrong');
 
-        score--;
+        if (score > 0) {
+            score--;
+        }
         updateScore();
 
         const eng = selectedEnglish;

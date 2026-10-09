@@ -101,14 +101,6 @@ function checkMatch() {
         selectedEnglish = null;
         selectedTranslation = null;
 
-        //Filtro para quando combinar todas
-        //     if (matchedPairs === 5) {
-        //         setTimeout(() => {
-        //             loadRound();
-        //         }, 1000);
-        //     }
-        // }
-        //NOVO apenas o if
         if (matchedPairs === currentWords.length) {
             setTimeout(() => {
                 loadRound();
@@ -118,7 +110,9 @@ function checkMatch() {
         selectedEnglish.classList.add('wrong');
         selectedTranslation.classList.add('wrong');
 
-        score--;
+        if (score > 0) {
+            score--;
+        }
         updateScore();
 
         const eng = selectedEnglish;
